@@ -33,7 +33,7 @@ public class Main {
                     System.out.print("[+] Insert course ID: ");
                         int id = new Scanner(System.in).nextInt();
                         try {
-                            Course foundCourse = courseService.findCourseById(Id);
+                            Course foundCourse = courseService.findCourseById(id);
                         } catch (CourseNotFoundException e) {
                             System.out.println(e.getMessage());
                         }
