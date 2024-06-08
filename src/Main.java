@@ -31,7 +31,7 @@ public class Main {
                 case 3:
                     System.out.println("=======================================");
                     System.out.print("[+] Insert course ID: ");
-                        int Id = new Scanner(System.in).nextInt();
+                        int id = new Scanner(System.in).nextInt();
                         try {
                             Course foundCourse = courseService.findCourseById(Id);
                         } catch (CourseNotFoundException e) {
